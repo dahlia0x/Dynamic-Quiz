@@ -2,15 +2,16 @@
  *
  * Created by doh on 4/16/2015.
  */
-
-var username;
-username = document.getElementById('inputUserName');
-var btnStart = document.getElementById('btnStart');
-
-(function(){
+$(document).ready(function(){
     "use strict";
 
+    var username;
+    username = $('#inputUserName').val();
+    var btnStart = document.getElementById('btnStart');
+    var lblUserName;
+
     btnStart.onclick = function(){
-        alert("message");
+        lblUserName = $('#lblUserName').val(username);
     };
-})();
+
+    });
